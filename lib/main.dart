@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const json());
+  runApp( json());
 }
 class json extends StatelessWidget {
   const json({super.key});
