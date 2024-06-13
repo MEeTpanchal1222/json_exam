@@ -14,7 +14,7 @@ class Dataprovider extends ChangeNotifier{
     print('_____________________________________________________________________');
   }
   Future<void> Tojson()async {
-    String? json  = await rootBundle.loadString('lib/uitels/list.json');
+    String? json  = await rootBundle.loadString('assets/list.json');
     datalist =jsonDecode(json);
     userlist = datalist.map((e) => datamodal.fromJson(e),).toList();
     print(userlist);
